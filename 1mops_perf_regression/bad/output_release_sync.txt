@@ -1,0 +1,15 @@
+a-kuzdnets@a-kuzdnets:~/dev/experiments/cluster2/node2$ ~/dev/tarantool/release-build/src/tarantool -i ~/dev/tarantool/perf/lua/1mops_write.lua --nodes=1 --fibers=6000 --ops=1000000 --transaction=1 --warmup=10 --sync
+# making 1000000 REPLACE operations,
+# 1 operations per txn,
+# using 6000 fibers,
+# in a replicaset of 1 nodes,
+# using HASH index type
+# with WAL mode write
+# 
+# promoting
+# done
+# Warmup... done, lsn: 	101837
+# master done 894612 ops in time: 3.252704, cpu: 4.746596
+# master average speed	275036	ops/sec
+# master peak speed	376950	ops/sec
+1mops_master 275036 rps

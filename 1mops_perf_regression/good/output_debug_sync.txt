@@ -1,0 +1,18 @@
+a-kuzdnets@a-kuzdnets:~/dev/experiments/cluster2/node2$ sudo perf record -F 500 -g -- ~/dev/tarantool/debug-build/src/tarantool -i ~/dev/tarantool/perf/lua/1mops_write.lua --nodes=1 --fibers=6000 --ops=1000000 --transaction=1 --warmup=10 --sync
+# making 1000000 REPLACE operations,
+# 1 operations per txn,
+# using 6000 fibers,
+# in a replicaset of 1 nodes,
+# using HASH index type
+# with WAL mode write
+# 
+# promoting
+# done
+# Warmup... done, lsn: 	101123
+# master done 1890885 ops in time: 8.060201, cpu: 12.069908
+# master average speed	234595	ops/sec
+# master peak speed	299638	ops/sec
+1mops_master 234595 rps
+[ perf record: Woken up 3 times to write data ]
+[ perf record: Captured and wrote 1,097 MB perf.data (7740 samples) ]
+

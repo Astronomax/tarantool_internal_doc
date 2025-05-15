@@ -1,0 +1,328 @@
+Всего коммитов для проверки: 227
+Тестовая директория: /home/a-kuzdnets/dev/1mops_perf_regression/work_dir
+Проверим, что первый коммит хороший
+Checking out commit: 4a866f64
+/home/a-kuzdnets/dev/tarantool/release-build/src/tarantool -i /home/a-kuzdnets/dev/tarantool/perf/lua/1mops_write.lua --nodes=1 --fibers=6000 --ops=1000000 --transaction=1 --warmup=10 --sync
+# making 1000000 REPLACE operations,
+# 1 operations per txn,
+# using 6000 fibers,
+# in a replicaset of 1 nodes,
+# using HASH index type
+# with WAL mode write
+# 
+# promoting
+# done
+# Warmup... done, lsn: 	101123
+# master done 1890885 ops in time: 3.689437, cpu: 5.543475
+# master average speed	512513	ops/sec
+# master peak speed	679427	ops/sec
+1mops_master 512513 rps
+
+512513.0 ops/sec
+Диапазон поиска 0 - 227
+Checking out commit: 4191a36f
+/home/a-kuzdnets/dev/tarantool/release-build/src/tarantool -i /home/a-kuzdnets/dev/tarantool/perf/lua/1mops_write.lua --nodes=1 --fibers=6000 --ops=1000000 --transaction=1 --warmup=10 --sync
+# making 1000000 REPLACE operations,
+# 1 operations per txn,
+# using 6000 fibers,
+# in a replicaset of 1 nodes,
+# using HASH index type
+# with WAL mode write
+# 
+# promoting
+# done
+# Warmup... done, lsn: 	100441
+# master done 1891567 ops in time: 3.680492, cpu: 5.600007
+# master average speed	513944	ops/sec
+# master peak speed	603993	ops/sec
+1mops_master 513944 rps
+
+Commit 4191a36f GOOD: 513944.0 ops/sec
+Диапазон поиска 113 - 227
+Checking out commit: e28be614
+/home/a-kuzdnets/dev/tarantool/release-build/src/tarantool -i /home/a-kuzdnets/dev/tarantool/perf/lua/1mops_write.lua --nodes=1 --fibers=6000 --ops=1000000 --transaction=1 --warmup=10 --sync
+# making 1000000 REPLACE operations,
+# 1 operations per txn,
+# using 6000 fibers,
+# in a replicaset of 1 nodes,
+# using HASH index type
+# with WAL mode write
+# 
+# promoting
+# done
+# Warmup... done, lsn: 	101837
+# master done 894651 ops in time: 3.369364, cpu: 4.918471
+# master average speed	265525	ops/sec
+# master peak speed	330887	ops/sec
+1mops_master 265525 rps
+
+Commit e28be614 BAD: 265525.0 ops/sec
+Диапазон поиска 113 - 170
+Checking out commit: 3edbc416
+/home/a-kuzdnets/dev/tarantool/release-build/src/tarantool -i /home/a-kuzdnets/dev/tarantool/perf/lua/1mops_write.lua --nodes=1 --fibers=6000 --ops=1000000 --transaction=1 --warmup=10 --sync
+# making 1000000 REPLACE operations,
+# 1 operations per txn,
+# using 6000 fibers,
+# in a replicaset of 1 nodes,
+# using HASH index type
+# with WAL mode write
+# 
+# promoting
+# done
+# Warmup... done, lsn: 	101834
+# master done 894644 ops in time: 3.502869, cpu: 5.107459
+# master average speed	255403	ops/sec
+# master peak speed	360029	ops/sec
+1mops_master 255403 rps
+
+Commit 3edbc416 BAD: 255403.0 ops/sec
+Диапазон поиска 113 - 141
+Checking out commit: 92774dc7
+/home/a-kuzdnets/dev/tarantool/release-build/src/tarantool -i /home/a-kuzdnets/dev/tarantool/perf/lua/1mops_write.lua --nodes=1 --fibers=6000 --ops=1000000 --transaction=1 --warmup=10 --sync
+# making 1000000 REPLACE operations,
+# 1 operations per txn,
+# using 6000 fibers,
+# in a replicaset of 1 nodes,
+# using HASH index type
+# with WAL mode write
+# 
+# promoting
+# done
+# Warmup... done, lsn: 	101837
+# master done 894573 ops in time: 3.343313, cpu: 4.866399
+# master average speed	267570	ops/sec
+# master peak speed	371190	ops/sec
+1mops_master 267570 rps
+
+Commit 92774dc7 BAD: 267570.0 ops/sec
+Диапазон поиска 113 - 127
+Checking out commit: 46673373
+/home/a-kuzdnets/dev/tarantool/release-build/src/tarantool -i /home/a-kuzdnets/dev/tarantool/perf/lua/1mops_write.lua --nodes=1 --fibers=6000 --ops=1000000 --transaction=1 --warmup=10 --sync
+# making 1000000 REPLACE operations,
+# 1 operations per txn,
+# using 6000 fibers,
+# in a replicaset of 1 nodes,
+# using HASH index type
+# with WAL mode write
+# 
+# promoting
+# done
+# Warmup... done, lsn: 	101123
+# master done 1890885 ops in time: 3.564857, cpu: 5.401840
+# master average speed	530423	ops/sec
+# master peak speed	614427	ops/sec
+1mops_master 530423 rps
+
+Commit 46673373 GOOD: 530423.0 ops/sec
+Диапазон поиска 120 - 127
+Checking out commit: 33df1cfb
+/home/a-kuzdnets/dev/tarantool/release-build/src/tarantool -i /home/a-kuzdnets/dev/tarantool/perf/lua/1mops_write.lua --nodes=1 --fibers=6000 --ops=1000000 --transaction=1 --warmup=10 --sync
+# making 1000000 REPLACE operations,
+# 1 operations per txn,
+# using 6000 fibers,
+# in a replicaset of 1 nodes,
+# using HASH index type
+# with WAL mode write
+# 
+# promoting
+# done
+# Warmup... done, lsn: 	101123
+# master done 1890885 ops in time: 3.606973, cpu: 5.519477
+# master average speed	524230	ops/sec
+# master peak speed	635439	ops/sec
+1mops_master 524230 rps
+
+Commit 33df1cfb GOOD: 524230.0 ops/sec
+Диапазон поиска 123 - 127
+Checking out commit: f7650b54
+Ошибка на коммите f7650b54: Ошибка при выполнении make
+
+
+
+
+
+
+commit 2a401a6ad9db5f3708a4fd91bd80e098eec4d6b9
+Author: Georgiy Lebedev <g.lebedev@tarantool.org>
+Date:   Sun Sep 22 13:24:17 2024 +0200
+
+    box: support asynchronous commit modes for synchronous transactions
+    
+    To overcome the throughput limitation of synchronous transactions let's
+    allow to commit them using asynchronous wait modes (2c66624). Such
+    transactions will have the same consistency guarantees with
+    `read-confirmed` and `linearizable` isolation levels. Changes made this way
+    can be observable with the `read-committed` isolation level.
+    
+    Currently, we return an error when the synchronous queue is full for the
+    only supported synchronous transaction commit mode, `complete`. However,
+    following the journal queue waiting logic, let's return an error only for
+    the `none` commit mode. Otherwise, we will wait for space in the
+    synchronous queue.
+    
+    Asynchronously committed synchronous transactions will not get rolled back
+    because of `replication_synchronous_timeout`, and subsequent synchronously
+    committed transactions will not roll back their asynchronously committed
+    predecessors on timeout.
+    
+    Closes #10583
+    
+    @TarantoolBot document
+    Title: Asynchronous commit modes for synchronous transactions
+    Product: Tarantool
+    Since: 3.3
+    Root document: https://www.tarantool.io/en/doc/latest/reference/reference_lua/box_txn_management/commit/
+    and https://www.tarantool.io/ru/doc/latest/reference/reference_lua/box_txn_management/atomic/
+    and https://www.tarantool.io/en/doc/latest/platform/replication/repl_sync/
+    
+    Some users may want to overcome the throughput limitation of synchronous
+    transactions and commit them using asynchronous wait modes (2c66624). This
+    will allow them to get the same consistency guarantees with
+    `read-confirmed` and `linearizable` isolation levels without paying the
+    throughput penalty. Changes committed this way will be visible with the
+    `read-committed` isolation level.
+    
+    Asynchronously committed synchronous transactions will not get rolled back
+    because of `replication_synchronous_timeout`, and subsequent synchronously
+    committed transactions will not rollback their asynchronously committed
+    predecessors on timeout.
+
+commit 52f9f4b93f84420305d59f18ab4d8ba4ee086c6b
+Author: Georgiy Lebedev <g.lebedev@tarantool.org>
+Date:   Sat Nov 23 12:56:52 2024 +0100
+
+    limbo: add helper to determine whether limbo is full
+    
+    In the scope of #10583 we will need to add another check for limbo
+    fullness, so let's refactor this logic out into a separate helper.
+    
+    Needed for #10583
+    
+    NO_CHANGELOG=<refactoring>
+    NO_DOC=<refactoring>
+    NO_TEST=<refactoring>
+
+commit 6ba928d23418fafa52b03b978bb31682cefa2bff
+Author: Georgiy Lebedev <g.lebedev@tarantool.org>
+Date:   Sat Nov 23 21:30:52 2024 +0100
+
+    limbo: do not explicitly wakeup txn fibers in quorum timeout rollback
+    
+    Explicitly waking up fibers during synchronous quorum timeout rollback is
+    actually redundant, since it is already done by `txn_limbo_complete`. This
+    wakeup could also lead to a crash for asynchronously committed
+    transactions, since `txn_limbo_complete` would `free` them (they do not
+    have a fiber waiting for their completion).
+    
+    Closes #10853
+    
+    NO_DOC=<bugfix>
+
+commit 92774dc7661b0377b3fefb9b9b9db40a27fc0103
+Author: Georgiy Lebedev <g.lebedev@tarantool.org>
+Date:   Sat Sep 28 16:49:10 2024 +0200
+
+    txn: ack limbo owner WAL writes to the limbo asynchronously
+    
+    Currently, a synchronous transaction must always wait for its WAL write to
+    finish, acknowledge itself to the synchronous queue, and potentially wait
+    for a synchronous CONFIRM request WAL write.
+    
+    In the scope of #10583, we want to support asynchronous wait modes for
+    synchronous transactions. To enable the none mode, we need to acknowledge
+    our own WAL writes for the synchronous queue asynchronously by:
+    1. Moving the acknowledgment to the callback for finishing transaction WAL
+       write;
+    2. Detaching the CONFIRM request WAL writing from the acknowledgment, and
+       making it asynchronous.
+    
+    To enable the latter, we introduce a worker fiber for the limbo, which is
+    responsible for closing the gap between the persisted confirmed LSN and the
+    volatile confirmed LSN by trying to write a CONFIRM request to the WAL, and
+    retrying it on failure.
+    
+    To be able to test the limbo worker behaviour in the event of a concurrent
+    PROMOTE/DEMOTE request processing, we add a new
+    `ERRINJ_TXN_LIMBO_WORKER_DELAY` error injection.
+    
+    Closes #10628
+    
+    NO_CHANGELOG=<no behaviour change>
+    NO_DOC=<no behaviour change>
+
+commit cb8b5d13c35f29902336078ffd06f1a845a75046
+Author: Georgiy Lebedev <g.lebedev@tarantool.org>
+Date:   Sun Sep 29 12:30:17 2024 +0200
+
+    wal: make ERRINJ_WAL_IO_COUNTDOWN behave like other COUNTDOWN injections
+    
+    Currently, `ERRINJ_WAL_IO_COUNTDOWN` behaves really differently than other
+    `*_COUNTDOWN` error injections: instead of setting the corresponding
+    `ERRINJ_WAL_IO` injection to `true` after `COUNTDOWN + 1` activations, it
+    sets it to `false`.
+    
+    This is not convenient for allowing `COUNTDOWN` WAL writes to succeed,
+    failing the `COUNTDOWN + 1`th write, and the current behaviour doesn't seem
+    to be beneficial.
+    
+    In the scope of #10628, we are going to need to test retrying of failed
+    CONFIRM request WAL writes, so let's make `ERRINJ_WAL_IO_COUNTDOWN` behave
+    like other `*_COUNTDOWN` injections for convenience.
+    
+    Needed for #10628
+    
+    NO_CHANGELOG=<refactoring>
+    NO_DOC=<refactoring>
+
+commit f7650b54dfd020a50a37fcfcd033e5904b7c1c15
+
+
+
+
+127 92774dc7661b0377b3fefb9b9b9db40a27fc0103 тут испортился перф
+126 cb8b5d13c35f29902336078ffd06f1a845a75046 Ошибка при выполнении make
+125 f7650b54dfd020a50a37fcfcd033e5904b7c1c15 Ошибка при выполнении make
+124 bc057ed71b7e98f1749019302ae25b512eb597a5 последний нормальный коммит
+123 33df1cfb2bf6199297d9589af9a54333e7691090 последний нормальный коммит
+122 017700dccdb04edd8470af620c69f3e7c572895b
+121 e72608f96b465d4f399dbbf7722b3c284fd10289
+120 466733731cb9e11d73f49ad6fb3adc2332bfddb8 последний нормальный коммит
+
+
+a-kuzdnets@a-kuzdnets:~/dev/1mops_perf_regression$ /home/a-kuzdnets/dev/tarantool/release-build/src/tarantool -i /home/a-kuzdnets/dev/tarantool/perf/lua/1mops_write.lua --nodes=1 --fibers=6000 --ops=1000000 --transaction=1 --warmup=10 --sync
+# making 1000000 REPLACE operations,
+# 1 operations per txn,
+# using 6000 fibers,
+# in a replicaset of 1 nodes,
+# using HASH index type
+# with WAL mode write
+# 
+# promoting
+# done
+# Warmup... done, lsn: 	101123
+# master done 1890885 ops in time: 3.679507, cpu: 5.502936
+# master average speed	513896	ops/sec
+# master peak speed	618650	ops/sec
+1mops_master 513896 rps
+
+
+
+a-kuzdnets@a-kuzdnets:~/dev/1mops_perf_regression$ /home/a-kuzdnets/dev/tarantool/release-build/src/tarantool -i /home/a-kuzdnets/dev/tarantool/perf/lua/1mops_write.lua --nodes=1 --fibers=6000 --ops=1000000 --transaction=1 --warmup=10 --sync
+# making 1000000 REPLACE operations,
+# 1 operations per txn,
+# using 6000 fibers,
+# in a replicaset of 1 nodes,
+# using HASH index type
+# with WAL mode write
+# 
+# promoting
+# done
+# Warmup... done, lsn: 	101837
+# master done 894612 ops in time: 3.252704, cpu: 4.746596
+# master average speed	275036	ops/sec
+# master peak speed	376950	ops/sec
+1mops_master 275036 rps
+
+
+
+
